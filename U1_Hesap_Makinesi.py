@@ -58,20 +58,17 @@ while True:
         for i in range(1, len(sayilar)):
             if girdi == '1':
                 sonuc = toplama(sonuc, sayilar[i])
+                islem = 'Toplama'
             elif girdi == '2':
                 sonuc = cikarma(sonuc, sayilar[i])
+                islem = 'Çıkarma'
             elif girdi == '3':
                 sonuc = carpma(sonuc, sayilar[i])
+                islem = 'Çarpma'
             elif girdi == '4':
                 sonuc = bolme(sonuc, sayilar[i])
-        if girdi == '1':
-            islem = 'Toplama'
-        elif girdi == '2':
-            islem = 'Çıkarma'
-        elif girdi == 3:
-            islem = 'Çarpma'
-        elif girdi == 4:
-            islem = 'Bölme'
+                islem = 'Bölme'
+         
         terminali_temizle()
         print(f"Girilen Sayılar: {sayilar}")
         print(f"{islem} işlemi yapıldı")
